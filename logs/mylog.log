@@ -1,0 +1,729 @@
+2023-04-30 12:13:34.020  INFO 4380 --- [restartedMain] spring.all.AllApplication                : Starting AllApplication using Java 17.0.3 on DESKTOP-1J0HSRS with PID 4380 (C:\Users\DELL\git\EmailDemo\all\target\classes started by DELL in C:\Users\DELL\git\EmailDemo\all)
+2023-04-30 12:13:34.021  INFO 4380 --- [restartedMain] spring.all.AllApplication                : No active profile set, falling back to 1 default profile: "default"
+2023-04-30 12:13:35.382  INFO 4380 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-04-30 12:13:35.383  INFO 4380 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-30 12:13:35.410  INFO 4380 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JPA - Could not safely identify store assignment for repository candidate interface spring.all.repository.EmailRepository; If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository
+2023-04-30 12:13:35.437  INFO 4380 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 52 ms. Found 4 JPA repository interfaces.
+2023-04-30 12:13:35.452  INFO 4380 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-04-30 12:13:35.453  INFO 4380 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2023-04-30 12:13:35.465  INFO 4380 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface spring.all.repository.FactoryKafkaRepository; If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository
+2023-04-30 12:13:35.466  INFO 4380 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface spring.all.repository.UserRepository; If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository
+2023-04-30 12:13:35.468  INFO 4380 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface spring.all.repository.UserSqlRepo; If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository
+2023-04-30 12:13:35.478  INFO 4380 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 25 ms. Found 2 MongoDB repository interfaces.
+2023-04-30 12:13:35.848  INFO 4380 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2023-04-30 12:13:35.849  INFO 4380 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.33] using APR version [1.7.0].
+2023-04-30 12:13:35.849  INFO 4380 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2023-04-30 12:13:35.850  INFO 4380 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-04-30 12:13:35.850  INFO 4380 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1o  3 May 2022]
+2023-04-30 12:13:35.851  INFO 4380 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-30 12:13:35.852  INFO 4380 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.73]
+2023-04-30 12:13:35.952  INFO 4380 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-30 12:13:35.952  INFO 4380 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1926 ms
+2023-04-30 12:13:36.025  INFO 4380 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-30 12:13:36.055  INFO 4380 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-04-30 12:13:36.482  INFO 4380 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-30 12:13:36.482  INFO 4380 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-30 12:13:36.668  INFO 4380 --- [restartedMain] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2023-04-30 12:13:36.673  INFO 4380 --- [cluster-ClusterId{value='644e0e18d5412f2a93d9aa8b', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:2}] to localhost:27017
+2023-04-30 12:13:36.674  INFO 4380 --- [cluster-ClusterId{value='644e0e18d5412f2a93d9aa8b', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 4, 24]}, minWireVersion=0, maxWireVersion=5, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=null, roundTripTimeNanos=560000}
+2023-04-30 12:13:36.678  WARN 4380 --- [restartedMain] o.s.data.convert.CustomConversions       : Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type; You might want to check your annotation setup at the converter implementation
+2023-04-30 12:13:36.706  INFO 4380 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-04-30 12:13:36.711  WARN 4380 --- [restartedMain] o.s.data.convert.CustomConversions       : Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type; You might want to check your annotation setup at the converter implementation
+2023-04-30 12:13:36.748  INFO 4380 --- [restartedMain] org.apache.spark.SparkContext            : Running Spark version 2.4.5
+2023-04-30 12:13:36.749  INFO 4380 --- [restartedMain] org.apache.spark.SparkContext            : Submitted application: File Reader
+2023-04-30 12:13:36.751  INFO 4380 --- [restartedMain] org.apache.spark.SecurityManager         : Changing view acls to: DELL
+2023-04-30 12:13:36.752  INFO 4380 --- [restartedMain] org.apache.spark.SecurityManager         : Changing modify acls to: DELL
+2023-04-30 12:13:36.752  INFO 4380 --- [restartedMain] org.apache.spark.SecurityManager         : Changing view acls groups to: 
+2023-04-30 12:13:36.752  INFO 4380 --- [restartedMain] org.apache.spark.SecurityManager         : Changing modify acls groups to: 
+2023-04-30 12:13:36.753  INFO 4380 --- [restartedMain] org.apache.spark.SecurityManager         : SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(DELL); groups with view permissions: Set(); users  with modify permissions: Set(DELL); groups with modify permissions: Set()
+2023-04-30 12:13:36.851  INFO 4380 --- [restartedMain] org.apache.spark.util.Utils              : Successfully started service 'sparkDriver' on port 59916.
+2023-04-30 12:13:36.854  INFO 4380 --- [restartedMain] org.apache.spark.SparkEnv                : Registering MapOutputTracker
+2023-04-30 12:13:36.856  INFO 4380 --- [restartedMain] org.apache.spark.SparkEnv                : Registering BlockManagerMaster
+2023-04-30 12:13:36.857  INFO 4380 --- [restartedMain] o.a.s.s.BlockManagerMasterEndpoint       : Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+2023-04-30 12:13:36.857  INFO 4380 --- [restartedMain] o.a.s.s.BlockManagerMasterEndpoint       : BlockManagerMasterEndpoint up
+2023-04-30 12:13:36.859  INFO 4380 --- [restartedMain] o.apache.spark.storage.DiskBlockManager  : Created local directory at C:\Users\DELL\AppData\Local\Temp\blockmgr-282a2d7f-21b2-4fd3-b4c2-b046892ae9f2
+2023-04-30 12:13:36.859  INFO 4380 --- [restartedMain] o.a.spark.storage.memory.MemoryStore     : MemoryStore started with capacity 1035.6 MB
+2023-04-30 12:13:36.861  INFO 4380 --- [restartedMain] org.apache.spark.SparkEnv                : Registering OutputCommitCoordinator
+2023-04-30 12:13:36.872  INFO 4380 --- [restartedMain] org.spark_project.jetty.server.Server    : jetty-9.3.z-SNAPSHOT, build timestamp: unknown, git hash: unknown
+2023-04-30 12:13:36.874  INFO 4380 --- [restartedMain] org.spark_project.jetty.server.Server    : Started @614690ms
+2023-04-30 12:13:36.880  INFO 4380 --- [restartedMain] o.s.jetty.server.AbstractConnector       : Started ServerConnector@7c83e543{HTTP/1.1,[http/1.1]}{0.0.0.0:4040}
+2023-04-30 12:13:36.880  INFO 4380 --- [restartedMain] org.apache.spark.util.Utils              : Successfully started service 'SparkUI' on port 4040.
+2023-04-30 12:13:36.881  INFO 4380 --- [restartedMain] o.s.jetty.server.handler.ContextHandler  : Started o.s.j.s.ServletContextHandler@310b1603{/jobs,null,AVAILABLE,@Spark}
+2023-04-30 12:13:36.882  INFO 4380 --- [restartedMain] o.s.jetty.server.handler.ContextHandler  : Started o.s.j.s.ServletContextHandler@7ee2ef3{/jobs/json,null,AVAILABLE,@Spark}
+2023-04-30 12:13:36.883  INFO 4380 --- [restartedMain] o.s.jetty.server.handler.ContextHandler  : Started o.s.j.s.ServletContextHandler@2083a82f{/jobs/job,null,AVAILABLE,@Spark}
+2023-04-30 12:13:36.885  INFO 4380 --- [restartedMain] o.s.jetty.server.handler.ContextHandler  : Started o.s.j.s.ServletContextHandler@43c9e881{/jobs/job/json,null,AVAILABLE,@Spark}
+2023-04-30 12:13:36.886  INFO 4380 --- [restartedMain] o.s.jetty.server.handler.ContextHandler  : Started o.s.j.s.ServletContextHandler@2a9b55f5{/stages,null,AVAILABLE,@Spark}
+2023-04-30 12:13:36.887  INFO 4380 --- [restartedMain] o.s.jetty.server.handler.ContextHandler  : Started o.s.j.s.ServletContextHandler@5cf46fe3{/stages/json,null,AVAILABLE,@Spark}
+2023-04-30 12:13:36.887  INFO 4380 --- [restartedMain] o.s.jetty.server.handler.ContextHandler  : Started o.s.j.s.ServletContextHandler@618b7682{/stages/stage,null,AVAILABLE,@Spark}
+2023-04-30 12:13:36.888  INFO 4380 --- [restartedMain] o.s.jetty.server.handler.ContextHandler  : Started o.s.j.s.ServletContextHandler@6d0a07d2{/stages/stage/json,null,AVAILABLE,@Spark}
+2023-04-30 12:13:36.889  INFO 4380 --- [restartedMain] o.s.jetty.server.handler.ContextHandler  : Started o.s.j.s.ServletContextHandler@1d4ed37b{/stages/pool,null,AVAILABLE,@Spark}
+2023-04-30 12:13:36.890  INFO 4380 --- [restartedMain] o.s.jetty.server.handler.ContextHandler  : Started o.s.j.s.ServletContextHandler@623a3c46{/stages/pool/json,null,AVAILABLE,@Spark}
+2023-04-30 12:13:36.891  INFO 4380 --- [restartedMain] o.s.jetty.server.handler.ContextHandler  : Started o.s.j.s.ServletContextHandler@58bf69e5{/storage,null,AVAILABLE,@Spark}
+2023-04-30 12:13:36.891  INFO 4380 --- [restartedMain] o.s.jetty.server.handler.ContextHandler  : Started o.s.j.s.ServletContextHandler@6536d1b7{/storage/json,null,AVAILABLE,@Spark}
+2023-04-30 12:13:36.892  INFO 4380 --- [restartedMain] o.s.jetty.server.handler.ContextHandler  : Started o.s.j.s.ServletContextHandler@e080361{/storage/rdd,null,AVAILABLE,@Spark}
+2023-04-30 12:13:36.893  INFO 4380 --- [restartedMain] o.s.jetty.server.handler.ContextHandler  : Started o.s.j.s.ServletContextHandler@3d63c6ea{/storage/rdd/json,null,AVAILABLE,@Spark}
+2023-04-30 12:13:36.894  INFO 4380 --- [restartedMain] o.s.jetty.server.handler.ContextHandler  : Started o.s.j.s.ServletContextHandler@1eb070e2{/environment,null,AVAILABLE,@Spark}
+2023-04-30 12:13:36.895  INFO 4380 --- [restartedMain] o.s.jetty.server.handler.ContextHandler  : Started o.s.j.s.ServletContextHandler@4dd8a1ea{/environment/json,null,AVAILABLE,@Spark}
+2023-04-30 12:13:36.896  INFO 4380 --- [restartedMain] o.s.jetty.server.handler.ContextHandler  : Started o.s.j.s.ServletContextHandler@305a03b{/executors,null,AVAILABLE,@Spark}
+2023-04-30 12:13:36.897  INFO 4380 --- [restartedMain] o.s.jetty.server.handler.ContextHandler  : Started o.s.j.s.ServletContextHandler@20726227{/executors/json,null,AVAILABLE,@Spark}
+2023-04-30 12:13:36.897  INFO 4380 --- [restartedMain] o.s.jetty.server.handler.ContextHandler  : Started o.s.j.s.ServletContextHandler@3dd831ab{/executors/threadDump,null,AVAILABLE,@Spark}
+2023-04-30 12:13:36.898  INFO 4380 --- [restartedMain] o.s.jetty.server.handler.ContextHandler  : Started o.s.j.s.ServletContextHandler@3507000b{/executors/threadDump/json,null,AVAILABLE,@Spark}
+2023-04-30 12:13:36.900  INFO 4380 --- [restartedMain] o.s.jetty.server.handler.ContextHandler  : Started o.s.j.s.ServletContextHandler@1b2d6ae8{/static,null,AVAILABLE,@Spark}
+2023-04-30 12:13:36.901  INFO 4380 --- [restartedMain] o.s.jetty.server.handler.ContextHandler  : Started o.s.j.s.ServletContextHandler@28fd40f0{/,null,AVAILABLE,@Spark}
+2023-04-30 12:13:36.902  INFO 4380 --- [restartedMain] o.s.jetty.server.handler.ContextHandler  : Started o.s.j.s.ServletContextHandler@54d4792d{/api,null,AVAILABLE,@Spark}
+2023-04-30 12:13:36.903  INFO 4380 --- [restartedMain] o.s.jetty.server.handler.ContextHandler  : Started o.s.j.s.ServletContextHandler@29d4670d{/jobs/job/kill,null,AVAILABLE,@Spark}
+2023-04-30 12:13:36.905  INFO 4380 --- [restartedMain] o.s.jetty.server.handler.ContextHandler  : Started o.s.j.s.ServletContextHandler@6bec5807{/stages/stage/kill,null,AVAILABLE,@Spark}
+2023-04-30 12:13:36.905  INFO 4380 --- [restartedMain] org.apache.spark.ui.SparkUI              : Bound SparkUI to 0.0.0.0, and started at http://DESKTOP-1J0HSRS:4040
+2023-04-30 12:13:36.938  INFO 4380 --- [restartedMain] org.apache.spark.executor.Executor       : Starting executor ID driver on host localhost
+2023-04-30 12:13:36.961  INFO 4380 --- [restartedMain] org.apache.spark.util.Utils              : Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 59917.
+2023-04-30 12:13:36.961  INFO 4380 --- [restartedMain] o.a.s.n.netty.NettyBlockTransferService  : Server created on DESKTOP-1J0HSRS:59917
+2023-04-30 12:13:36.962  INFO 4380 --- [restartedMain] org.apache.spark.storage.BlockManager    : Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+2023-04-30 12:13:36.962  INFO 4380 --- [restartedMain] o.a.spark.storage.BlockManagerMaster     : Registering BlockManager BlockManagerId(driver, DESKTOP-1J0HSRS, 59917, None)
+2023-04-30 12:13:36.963  INFO 4380 --- [dispatcher-event-loop-2] o.a.s.s.BlockManagerMasterEndpoint       : Registering block manager DESKTOP-1J0HSRS:59917 with 1035.6 MB RAM, BlockManagerId(driver, DESKTOP-1J0HSRS, 59917, None)
+2023-04-30 12:13:36.964  INFO 4380 --- [restartedMain] o.a.spark.storage.BlockManagerMaster     : Registered BlockManager BlockManagerId(driver, DESKTOP-1J0HSRS, 59917, None)
+2023-04-30 12:13:36.964  INFO 4380 --- [restartedMain] org.apache.spark.storage.BlockManager    : Initialized BlockManager: BlockManagerId(driver, DESKTOP-1J0HSRS, 59917, None)
+2023-04-30 12:13:36.965  INFO 4380 --- [restartedMain] o.s.jetty.server.handler.ContextHandler  : Started o.s.j.s.ServletContextHandler@1c137546{/metrics/json,null,AVAILABLE,@Spark}
+2023-04-30 12:13:37.106  INFO 4380 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1fdbb3ac, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3a17c626, org.springframework.security.web.context.SecurityContextPersistenceFilter@3b6c6d19, org.springframework.security.web.header.HeaderWriterFilter@7d342c72, org.springframework.security.web.authentication.logout.LogoutFilter@155b0c0d, spring.all.Components.JwtAuthenticationFilter@c3b4a13, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1b36806f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@47bd68c7, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@578bce0b, org.springframework.security.web.session.SessionManagementFilter@3c56ccc5, org.springframework.security.web.access.ExceptionTranslationFilter@563ec88b, org.springframework.security.web.access.intercept.AuthorizationFilter@2bb725a0]
+2023-04-30 12:13:42.271  INFO 4380 --- [restartedMain] o.a.k.clients.admin.AdminClientConfig    : AdminClientConfig values: 
+	bootstrap.servers = [localhost:9092]
+	client.dns.lookup = use_all_dns_ips
+	client.id = 
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2023-04-30 12:13:42.300  INFO 4380 --- [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.1.2
+2023-04-30 12:13:42.302  INFO 4380 --- [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: f8c67dc3ae0a3265
+2023-04-30 12:13:42.302  INFO 4380 --- [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1682837022300
+2023-04-30 12:13:42.328  INFO 4380 --- [kafka-admin-client-thread | adminclient-2] o.a.kafka.common.utils.AppInfoParser     : App info kafka.admin.client for adminclient-2 unregistered
+2023-04-30 12:13:42.330  INFO 4380 --- [kafka-admin-client-thread | adminclient-2] org.apache.kafka.common.metrics.Metrics  : Metrics scheduler closed
+2023-04-30 12:13:42.330  INFO 4380 --- [kafka-admin-client-thread | adminclient-2] org.apache.kafka.common.metrics.Metrics  : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2023-04-30 12:13:42.330  INFO 4380 --- [kafka-admin-client-thread | adminclient-2] org.apache.kafka.common.metrics.Metrics  : Metrics reporters closed
+2023-04-30 12:13:42.338  INFO 4380 --- [restartedMain] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-myGroup-2
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = myGroup
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.springframework.kafka.support.serializer.JsonDeserializer
+
+2023-04-30 12:13:42.354  INFO 4380 --- [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.1.2
+2023-04-30 12:13:42.354  INFO 4380 --- [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: f8c67dc3ae0a3265
+2023-04-30 12:13:42.354  INFO 4380 --- [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1682837022354
+2023-04-30 12:13:42.355  INFO 4380 --- [restartedMain] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-myGroup-2, groupId=myGroup] Subscribed to topic(s): factory
+2023-04-30 12:13:42.364  INFO 4380 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2023-04-30 12:13:42.377  INFO 4380 --- [restartedMain] spring.all.AllApplication                : Started AllApplication in 8.562 seconds (JVM running for 620.193)
+2023-04-30 12:13:42.380  INFO 4380 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-myGroup-2, groupId=myGroup] Resetting the last seen epoch of partition factory-0 to 0 since the associated topicId changed from null to KvLxiQKtRBS-gnYZcdby-w
+2023-04-30 12:13:42.380  INFO 4380 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-myGroup-2, groupId=myGroup] Cluster ID: MwRCsZZ5R_KtWtgl6hzoNA
+2023-04-30 12:13:42.381  INFO 4380 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-myGroup-2, groupId=myGroup] Discovered group coordinator DESKTOP-1J0HSRS:9092 (id: 2147483647 rack: null)
+2023-04-30 12:13:42.382  INFO 4380 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-myGroup-2, groupId=myGroup] (Re-)joining group
+2023-04-30 12:13:42.383  INFO 4380 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-04-30 12:13:42.384  INFO 4380 --- [scheduling-1] spring.all.service.KafkaDataService      : inside fetch data
+2023-04-30 12:13:42.388  INFO 4380 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-myGroup-2, groupId=myGroup] Request joining group due to: need to re-join with the given member-id
+2023-04-30 12:13:42.390  INFO 4380 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-myGroup-2, groupId=myGroup] (Re-)joining group
+2023-04-30 12:13:42.414  INFO 4380 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-myGroup-2, groupId=myGroup] Successfully joined group with generation Generation{generationId=99, memberId='consumer-myGroup-2-6aba4237-c263-42e9-8c97-5cfeb47a6e2a', protocol='range'}
+2023-04-30 12:13:42.414  INFO 4380 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-myGroup-2, groupId=myGroup] Finished assignment for group at generation 99: {consumer-myGroup-2-6aba4237-c263-42e9-8c97-5cfeb47a6e2a=Assignment(partitions=[factory-0])}
+2023-04-30 12:13:42.420  INFO 4380 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-myGroup-2, groupId=myGroup] Successfully synced group in generation Generation{generationId=99, memberId='consumer-myGroup-2-6aba4237-c263-42e9-8c97-5cfeb47a6e2a', protocol='range'}
+2023-04-30 12:13:42.421  INFO 4380 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-myGroup-2, groupId=myGroup] Notifying assignor about the new Assignment(partitions=[factory-0])
+2023-04-30 12:13:42.421  INFO 4380 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-myGroup-2, groupId=myGroup] Adding newly assigned partitions: factory-0
+2023-04-30 12:13:42.424  INFO 4380 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-myGroup-2, groupId=myGroup] Setting offset for partition factory-0 to the committed offset FetchPosition{offset=82440, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[DESKTOP-1J0HSRS:9092 (id: 0 rack: null)], epoch=0}}
+2023-04-30 12:13:42.424  INFO 4380 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : myGroup: partitions assigned: [factory-0]
+2023-04-30 12:13:42.454  INFO 4380 --- [scheduling-1] spring.all.service.KafkaDataService      : inside fetchdata :oldcount 57
+2023-04-30 12:13:42.508  INFO 4380 --- [scheduling-1] spring.all.service.KafkaDataService      : inside checkcount :oldcount 57
+2023-04-30 12:13:42.532  INFO 4380 --- [scheduling-1] spring.all.service.KafkaDataService      : inside checkcount :newcount 57
+2023-04-30 12:13:52.589  INFO 4380 --- [scheduling-1] spring.all.service.KafkaDataService      : inside checkcount :oldcount 57
+2023-04-30 12:13:52.645  INFO 4380 --- [scheduling-1] spring.all.service.KafkaDataService      : inside checkcount :newcount 57
+2023-04-30 12:14:02.489  INFO 4380 --- [scheduling-1] spring.all.service.KafkaDataService      : inside fetch data
+2023-04-30 12:14:02.562  INFO 4380 --- [scheduling-1] spring.all.service.KafkaDataService      : inside fetchdata :oldcount 57
+2023-04-30 12:14:02.676  INFO 4380 --- [scheduling-1] spring.all.service.KafkaDataService      : inside checkcount :oldcount 57
+2023-04-30 12:14:02.708  INFO 4380 --- [scheduling-1] spring.all.service.KafkaDataService      : inside checkcount :newcount 57
+2023-04-30 12:14:12.748  INFO 4380 --- [scheduling-1] spring.all.service.KafkaDataService      : inside checkcount :oldcount 57
+2023-04-30 12:14:12.791  INFO 4380 --- [scheduling-1] spring.all.service.KafkaDataService      : inside checkcount :newcount 57
+2023-04-30 12:14:22.599  INFO 4380 --- [scheduling-1] spring.all.service.KafkaDataService      : inside fetch data
+2023-04-30 12:14:22.693  INFO 4380 --- [scheduling-1] spring.all.service.KafkaDataService      : inside fetchdata :oldcount 57
+2023-04-30 12:14:22.819  INFO 4380 --- [scheduling-1] spring.all.service.KafkaDataService      : inside checkcount :oldcount 57
+2023-04-30 12:14:22.843  INFO 4380 --- [scheduling-1] spring.all.service.KafkaDataService      : inside checkcount :newcount 57
+2023-04-30 12:14:31.234  INFO 4380 --- [RMI TCP Connection(14)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2023-04-30 12:14:31.251  INFO 4380 --- [RMI TCP Connection(14)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-04-30 12:14:31.256  INFO 4380 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-myGroup-2, groupId=myGroup] Revoke previously assigned partitions factory-0
+2023-04-30 12:14:31.257  INFO 4380 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : myGroup: partitions revoked: [factory-0]
+2023-04-30 12:14:31.257  INFO 4380 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-myGroup-2, groupId=myGroup] Member consumer-myGroup-2-6aba4237-c263-42e9-8c97-5cfeb47a6e2a sending LeaveGroup request to coordinator DESKTOP-1J0HSRS:9092 (id: 2147483647 rack: null) due to the consumer unsubscribed from all topics
+2023-04-30 12:14:31.258  INFO 4380 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-myGroup-2, groupId=myGroup] Resetting generation due to: consumer pro-actively leaving the group
+2023-04-30 12:14:31.258  INFO 4380 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-myGroup-2, groupId=myGroup] Request joining group due to: consumer pro-actively leaving the group
+2023-04-30 12:14:31.258  INFO 4380 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-myGroup-2, groupId=myGroup] Unsubscribed all topics or patterns and assigned partitions
+2023-04-30 12:14:31.259  INFO 4380 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-myGroup-2, groupId=myGroup] Resetting generation due to: consumer pro-actively leaving the group
+2023-04-30 12:14:31.259  INFO 4380 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-myGroup-2, groupId=myGroup] Request joining group due to: consumer pro-actively leaving the group
+2023-04-30 12:14:31.263  INFO 4380 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.common.metrics.Metrics  : Metrics scheduler closed
+2023-04-30 12:14:31.263  INFO 4380 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.common.metrics.Metrics  : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2023-04-30 12:14:31.264  INFO 4380 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.common.metrics.Metrics  : Metrics reporters closed
+2023-04-30 12:14:31.267  INFO 4380 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.kafka.common.utils.AppInfoParser     : App info kafka.consumer for consumer-myGroup-2 unregistered
+2023-04-30 12:14:31.267  INFO 4380 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : myGroup: Consumer stopped
+2023-04-30 12:14:31.272  INFO 4380 --- [RMI TCP Connection(14)-127.0.0.1] o.s.jetty.server.AbstractConnector       : Stopped Spark@7c83e543{HTTP/1.1,[http/1.1]}{0.0.0.0:4040}
+2023-04-30 12:14:31.273  INFO 4380 --- [RMI TCP Connection(14)-127.0.0.1] org.apache.spark.ui.SparkUI              : Stopped Spark web UI at http://DESKTOP-1J0HSRS:4040
+2023-04-30 12:14:31.275  INFO 4380 --- [dispatcher-event-loop-1] o.a.s.MapOutputTrackerMasterEndpoint     : MapOutputTrackerMasterEndpoint stopped!
+2023-04-30 12:14:31.280  INFO 4380 --- [RMI TCP Connection(14)-127.0.0.1] o.a.spark.storage.memory.MemoryStore     : MemoryStore cleared
+2023-04-30 12:14:31.281  INFO 4380 --- [RMI TCP Connection(14)-127.0.0.1] org.apache.spark.storage.BlockManager    : BlockManager stopped
+2023-04-30 12:14:31.281  INFO 4380 --- [RMI TCP Connection(14)-127.0.0.1] o.a.spark.storage.BlockManagerMaster     : BlockManagerMaster stopped
+2023-04-30 12:14:31.282  INFO 4380 --- [dispatcher-event-loop-3] rdinator$OutputCommitCoordinatorEndpoint : OutputCommitCoordinator stopped!
+2023-04-30 12:14:31.285  INFO 4380 --- [RMI TCP Connection(14)-127.0.0.1] org.apache.spark.SparkContext            : Successfully stopped SparkContext
+2023-04-30 12:14:31.288  INFO 4380 --- [RMI TCP Connection(14)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-30 12:14:48.407  INFO 11004 --- [restartedMain] spring.all.AllApplication                : Starting AllApplication using Java 17.0.3 on DESKTOP-1J0HSRS with PID 11004 (C:\Users\DELL\git\EmailDemo\all\target\classes started by DELL in C:\Users\DELL\git\EmailDemo\all)
+2023-04-30 12:14:48.410  INFO 11004 --- [restartedMain] spring.all.AllApplication                : No active profile set, falling back to 1 default profile: "default"
+2023-04-30 12:14:48.519  INFO 11004 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\DELL\.m2\repository\org\roaringbitmap\RoaringBitmap\0.7.45\RoaringBitmap-0.7.45.jar referenced one or more files that do not exist: file:/C:/Users/DELL/.m2/repository/org/roaringbitmap/RoaringBitmap/0.7.45/lib/shims-0.7.45.jar
+2023-04-30 12:14:48.520  INFO 11004 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-04-30 12:14:48.521  INFO 11004 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-04-30 12:14:50.681  INFO 11004 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-04-30 12:14:50.686  INFO 11004 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-30 12:14:50.774  INFO 11004 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JPA - Could not safely identify store assignment for repository candidate interface spring.all.repository.EmailRepository; If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository
+2023-04-30 12:14:50.841  INFO 11004 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 138 ms. Found 4 JPA repository interfaces.
+2023-04-30 12:14:50.893  INFO 11004 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-04-30 12:14:50.894  INFO 11004 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2023-04-30 12:14:50.908  INFO 11004 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface spring.all.repository.FactoryKafkaRepository; If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository
+2023-04-30 12:14:50.910  INFO 11004 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface spring.all.repository.UserRepository; If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository
+2023-04-30 12:14:50.912  INFO 11004 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface spring.all.repository.UserSqlRepo; If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository
+2023-04-30 12:14:50.923  INFO 11004 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 27 ms. Found 2 MongoDB repository interfaces.
+2023-04-30 12:14:52.689  INFO 11004 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2023-04-30 12:14:52.692  INFO 11004 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.33] using APR version [1.7.0].
+2023-04-30 12:14:52.692  INFO 11004 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2023-04-30 12:14:52.692  INFO 11004 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-04-30 12:14:52.698  INFO 11004 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1o  3 May 2022]
+2023-04-30 12:14:52.713  INFO 11004 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-30 12:14:52.713  INFO 11004 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.73]
+2023-04-30 12:14:52.980  INFO 11004 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-30 12:14:52.980  INFO 11004 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4458 ms
+2023-04-30 12:14:53.471  INFO 11004 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-30 12:14:53.609  INFO 11004 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-04-30 12:14:53.979  INFO 11004 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-04-30 12:14:54.663  INFO 11004 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-04-30 12:14:55.855  INFO 11004 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-30 12:14:55.879  INFO 11004 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-30 12:14:56.729  INFO 11004 --- [restartedMain] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2023-04-30 12:14:56.860  INFO 11004 --- [cluster-ClusterId{value='644e0e6866e8c45c28390086', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:3}] to localhost:27017
+2023-04-30 12:14:56.868  INFO 11004 --- [cluster-ClusterId{value='644e0e6866e8c45c28390086', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 4, 24]}, minWireVersion=0, maxWireVersion=5, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=null, roundTripTimeNanos=2648000}
+2023-04-30 12:14:56.984  WARN 11004 --- [restartedMain] o.s.data.convert.CustomConversions       : Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type; You might want to check your annotation setup at the converter implementation
+2023-04-30 12:14:57.109  INFO 11004 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-04-30 12:14:57.135  WARN 11004 --- [restartedMain] o.s.data.convert.CustomConversions       : Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type; You might want to check your annotation setup at the converter implementation
+2023-04-30 12:14:58.367  INFO 11004 --- [restartedMain] org.apache.spark.SparkContext            : Running Spark version 2.4.5
+2023-04-30 12:14:59.142  WARN 11004 --- [restartedMain] org.apache.hadoop.util.NativeCodeLoader  : Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2023-04-30 12:14:59.363 ERROR 11004 --- [restartedMain] org.apache.hadoop.util.Shell             : Failed to locate the winutils binary in the hadoop binary path
+
+java.io.IOException: Could not locate executable null\bin\winutils.exe in the Hadoop binaries.
+	at org.apache.hadoop.util.Shell.getQualifiedBinPath(Shell.java:378) ~[hadoop-common-2.6.5.jar:na]
+	at org.apache.hadoop.util.Shell.getWinUtilsPath(Shell.java:393) ~[hadoop-common-2.6.5.jar:na]
+	at org.apache.hadoop.util.Shell.<clinit>(Shell.java:386) ~[hadoop-common-2.6.5.jar:na]
+	at org.apache.hadoop.util.StringUtils.<clinit>(StringUtils.java:79) ~[hadoop-common-2.6.5.jar:na]
+	at org.apache.hadoop.security.Groups.parseStaticMapping(Groups.java:116) ~[hadoop-common-2.6.5.jar:na]
+	at org.apache.hadoop.security.Groups.<init>(Groups.java:93) ~[hadoop-common-2.6.5.jar:na]
+	at org.apache.hadoop.security.Groups.<init>(Groups.java:73) ~[hadoop-common-2.6.5.jar:na]
+	at org.apache.hadoop.security.Groups.getUserToGroupsMappingService(Groups.java:293) ~[hadoop-common-2.6.5.jar:na]
+	at org.apache.hadoop.security.UserGroupInformation.initialize(UserGroupInformation.java:283) ~[hadoop-common-2.6.5.jar:na]
+	at org.apache.hadoop.security.UserGroupInformation.ensureInitialized(UserGroupInformation.java:260) ~[hadoop-common-2.6.5.jar:na]
+	at org.apache.hadoop.security.UserGroupInformation.loginUserFromSubject(UserGroupInformation.java:789) ~[hadoop-common-2.6.5.jar:na]
+	at org.apache.hadoop.security.UserGroupInformation.getLoginUser(UserGroupInformation.java:774) ~[hadoop-common-2.6.5.jar:na]
+	at org.apache.hadoop.security.UserGroupInformation.getCurrentUser(UserGroupInformation.java:647) ~[hadoop-common-2.6.5.jar:na]
+	at org.apache.spark.util.Utils$$anonfun$getCurrentUserName$1.apply(Utils.scala:2422) ~[spark-core_2.11-2.4.5.jar:2.4.5]
+	at org.apache.spark.util.Utils$$anonfun$getCurrentUserName$1.apply(Utils.scala:2422) ~[spark-core_2.11-2.4.5.jar:2.4.5]
+	at scala.Option.getOrElse(Option.scala:121) ~[scala-library-2.11.12.jar:na]
+	at org.apache.spark.util.Utils$.getCurrentUserName(Utils.scala:2422) ~[spark-core_2.11-2.4.5.jar:2.4.5]
+	at org.apache.spark.SparkContext.<init>(SparkContext.scala:293) ~[spark-core_2.11-2.4.5.jar:2.4.5]
+	at org.apache.spark.SparkContext$.getOrCreate(SparkContext.scala:2520) ~[spark-core_2.11-2.4.5.jar:2.4.5]
+	at org.apache.spark.sql.SparkSession$Builder$$anonfun$7.apply(SparkSession.scala:935) ~[spark-sql_2.11-2.4.5.jar:2.4.5]
+	at org.apache.spark.sql.SparkSession$Builder$$anonfun$7.apply(SparkSession.scala:926) ~[spark-sql_2.11-2.4.5.jar:2.4.5]
+	at scala.Option.getOrElse(Option.scala:121) ~[scala-library-2.11.12.jar:na]
+	at org.apache.spark.sql.SparkSession$Builder.getOrCreate(SparkSession.scala:926) ~[spark-sql_2.11-2.4.5.jar:2.4.5]
+	at spring.all.config.SparkConfig.sparkSession(SparkConfig.java:13) ~[classes/:na]
+	at spring.all.config.SparkConfig$$EnhancerBySpringCGLIB$$82bbbcf0.CGLIB$sparkSession$0(<generated>) ~[classes/:na]
+	at spring.all.config.SparkConfig$$EnhancerBySpringCGLIB$$82bbbcf0$$FastClassBySpringCGLIB$$d9948a7d.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244) ~[spring-core-5.3.26.jar:5.3.26]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331) ~[spring-context-5.3.26.jar:5.3.26]
+	at spring.all.config.SparkConfig$$EnhancerBySpringCGLIB$$82bbbcf0.sparkSession(<generated>) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154) ~[spring-beans-5.3.26.jar:5.3.26]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653) ~[spring-beans-5.3.26.jar:5.3.26]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:486) ~[spring-beans-5.3.26.jar:5.3.26]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352) ~[spring-beans-5.3.26.jar:5.3.26]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195) ~[spring-beans-5.3.26.jar:5.3.26]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.26.jar:5.3.26]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.26.jar:5.3.26]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.26.jar:5.3.26]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.26.jar:5.3.26]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.26.jar:5.3.26]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.26.jar:5.3.26]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.26.jar:5.3.26]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391) ~[spring-beans-5.3.26.jar:5.3.26]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311) ~[spring-beans-5.3.26.jar:5.3.26]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:657) ~[spring-beans-5.3.26.jar:5.3.26]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640) ~[spring-beans-5.3.26.jar:5.3.26]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119) ~[spring-beans-5.3.26.jar:5.3.26]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399) ~[spring-beans-5.3.26.jar:5.3.26]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431) ~[spring-beans-5.3.26.jar:5.3.26]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619) ~[spring-beans-5.3.26.jar:5.3.26]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.26.jar:5.3.26]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.26.jar:5.3.26]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.26.jar:5.3.26]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.26.jar:5.3.26]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.26.jar:5.3.26]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.26.jar:5.3.26]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391) ~[spring-beans-5.3.26.jar:5.3.26]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311) ~[spring-beans-5.3.26.jar:5.3.26]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:657) ~[spring-beans-5.3.26.jar:5.3.26]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640) ~[spring-beans-5.3.26.jar:5.3.26]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119) ~[spring-beans-5.3.26.jar:5.3.26]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399) ~[spring-beans-5.3.26.jar:5.3.26]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431) ~[spring-beans-5.3.26.jar:5.3.26]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619) ~[spring-beans-5.3.26.jar:5.3.26]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.26.jar:5.3.26]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.26.jar:5.3.26]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.26.jar:5.3.26]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.26.jar:5.3.26]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.26.jar:5.3.26]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955) ~[spring-beans-5.3.26.jar:5.3.26]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:920) ~[spring-context-5.3.26.jar:5.3.26]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.26.jar:5.3.26]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.10.jar:2.7.10]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731) ~[spring-boot-2.7.10.jar:2.7.10]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) ~[spring-boot-2.7.10.jar:2.7.10]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) ~[spring-boot-2.7.10.jar:2.7.10]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303) ~[spring-boot-2.7.10.jar:2.7.10]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292) ~[spring-boot-2.7.10.jar:2.7.10]
+	at spring.all.AllApplication.main(AllApplication.java:26) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.7.10.jar:2.7.10]
+
+2023-04-30 12:14:59.524  INFO 11004 --- [restartedMain] org.apache.spark.SparkContext            : Submitted application: File Reader
+2023-04-30 12:14:59.649  INFO 11004 --- [restartedMain] org.apache.spark.SecurityManager         : Changing view acls to: DELL
+2023-04-30 12:14:59.651  INFO 11004 --- [restartedMain] org.apache.spark.SecurityManager         : Changing modify acls to: DELL
+2023-04-30 12:14:59.653  INFO 11004 --- [restartedMain] org.apache.spark.SecurityManager         : Changing view acls groups to: 
+2023-04-30 12:14:59.655  INFO 11004 --- [restartedMain] org.apache.spark.SecurityManager         : Changing modify acls groups to: 
+2023-04-30 12:14:59.656  INFO 11004 --- [restartedMain] org.apache.spark.SecurityManager         : SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(DELL); groups with view permissions: Set(); users  with modify permissions: Set(DELL); groups with modify permissions: Set()
+2023-04-30 12:15:00.275  INFO 11004 --- [restartedMain] org.apache.spark.util.Utils              : Successfully started service 'sparkDriver' on port 59962.
+2023-04-30 12:15:00.321  INFO 11004 --- [restartedMain] org.apache.spark.SparkEnv                : Registering MapOutputTracker
+2023-04-30 12:15:00.363  INFO 11004 --- [restartedMain] org.apache.spark.SparkEnv                : Registering BlockManagerMaster
+2023-04-30 12:15:00.370  INFO 11004 --- [restartedMain] o.a.s.s.BlockManagerMasterEndpoint       : Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+2023-04-30 12:15:00.371  INFO 11004 --- [restartedMain] o.a.s.s.BlockManagerMasterEndpoint       : BlockManagerMasterEndpoint up
+2023-04-30 12:15:00.391  INFO 11004 --- [restartedMain] o.apache.spark.storage.DiskBlockManager  : Created local directory at C:\Users\DELL\AppData\Local\Temp\blockmgr-ff7f9163-c03d-4647-af17-9f965f7b63d5
+2023-04-30 12:15:00.431  INFO 11004 --- [restartedMain] o.a.spark.storage.memory.MemoryStore     : MemoryStore started with capacity 1035.6 MB
+2023-04-30 12:15:00.462  INFO 11004 --- [restartedMain] org.apache.spark.SparkEnv                : Registering OutputCommitCoordinator
+2023-04-30 12:15:00.662  INFO 11004 --- [restartedMain] org.spark_project.jetty.util.log         : Logging initialized @16566ms
+2023-04-30 12:15:00.781  INFO 11004 --- [restartedMain] org.spark_project.jetty.server.Server    : jetty-9.3.z-SNAPSHOT, build timestamp: unknown, git hash: unknown
+2023-04-30 12:15:00.807  INFO 11004 --- [restartedMain] org.spark_project.jetty.server.Server    : Started @16714ms
+2023-04-30 12:15:00.850  INFO 11004 --- [restartedMain] o.s.jetty.server.AbstractConnector       : Started ServerConnector@2e181098{HTTP/1.1,[http/1.1]}{0.0.0.0:4040}
+2023-04-30 12:15:00.850  INFO 11004 --- [restartedMain] org.apache.spark.util.Utils              : Successfully started service 'SparkUI' on port 4040.
+2023-04-30 12:15:00.876  INFO 11004 --- [restartedMain] o.s.jetty.server.handler.ContextHandler  : Started o.s.j.s.ServletContextHandler@451a02af{/jobs,null,AVAILABLE,@Spark}
+2023-04-30 12:15:00.877  INFO 11004 --- [restartedMain] o.s.jetty.server.handler.ContextHandler  : Started o.s.j.s.ServletContextHandler@6424196b{/jobs/json,null,AVAILABLE,@Spark}
+2023-04-30 12:15:00.879  INFO 11004 --- [restartedMain] o.s.jetty.server.handler.ContextHandler  : Started o.s.j.s.ServletContextHandler@26fabd8e{/jobs/job,null,AVAILABLE,@Spark}
+2023-04-30 12:15:00.881  INFO 11004 --- [restartedMain] o.s.jetty.server.handler.ContextHandler  : Started o.s.j.s.ServletContextHandler@209d7fb4{/jobs/job/json,null,AVAILABLE,@Spark}
+2023-04-30 12:15:00.882  INFO 11004 --- [restartedMain] o.s.jetty.server.handler.ContextHandler  : Started o.s.j.s.ServletContextHandler@53f8a0e4{/stages,null,AVAILABLE,@Spark}
+2023-04-30 12:15:00.883  INFO 11004 --- [restartedMain] o.s.jetty.server.handler.ContextHandler  : Started o.s.j.s.ServletContextHandler@3109a01f{/stages/json,null,AVAILABLE,@Spark}
+2023-04-30 12:15:00.885  INFO 11004 --- [restartedMain] o.s.jetty.server.handler.ContextHandler  : Started o.s.j.s.ServletContextHandler@6305753b{/stages/stage,null,AVAILABLE,@Spark}
+2023-04-30 12:15:00.888  INFO 11004 --- [restartedMain] o.s.jetty.server.handler.ContextHandler  : Started o.s.j.s.ServletContextHandler@54972b22{/stages/stage/json,null,AVAILABLE,@Spark}
+2023-04-30 12:15:00.890  INFO 11004 --- [restartedMain] o.s.jetty.server.handler.ContextHandler  : Started o.s.j.s.ServletContextHandler@57312055{/stages/pool,null,AVAILABLE,@Spark}
+2023-04-30 12:15:00.891  INFO 11004 --- [restartedMain] o.s.jetty.server.handler.ContextHandler  : Started o.s.j.s.ServletContextHandler@280c467{/stages/pool/json,null,AVAILABLE,@Spark}
+2023-04-30 12:15:00.893  INFO 11004 --- [restartedMain] o.s.jetty.server.handler.ContextHandler  : Started o.s.j.s.ServletContextHandler@3f7399aa{/storage,null,AVAILABLE,@Spark}
+2023-04-30 12:15:00.895  INFO 11004 --- [restartedMain] o.s.jetty.server.handler.ContextHandler  : Started o.s.j.s.ServletContextHandler@52506b5d{/storage/json,null,AVAILABLE,@Spark}
+2023-04-30 12:15:00.896  INFO 11004 --- [restartedMain] o.s.jetty.server.handler.ContextHandler  : Started o.s.j.s.ServletContextHandler@cbdcaca{/storage/rdd,null,AVAILABLE,@Spark}
+2023-04-30 12:15:00.898  INFO 11004 --- [restartedMain] o.s.jetty.server.handler.ContextHandler  : Started o.s.j.s.ServletContextHandler@81a94c6{/storage/rdd/json,null,AVAILABLE,@Spark}
+2023-04-30 12:15:00.899  INFO 11004 --- [restartedMain] o.s.jetty.server.handler.ContextHandler  : Started o.s.j.s.ServletContextHandler@2b07e2a6{/environment,null,AVAILABLE,@Spark}
+2023-04-30 12:15:00.901  INFO 11004 --- [restartedMain] o.s.jetty.server.handler.ContextHandler  : Started o.s.j.s.ServletContextHandler@7a5c7e18{/environment/json,null,AVAILABLE,@Spark}
+2023-04-30 12:15:00.902  INFO 11004 --- [restartedMain] o.s.jetty.server.handler.ContextHandler  : Started o.s.j.s.ServletContextHandler@18551003{/executors,null,AVAILABLE,@Spark}
+2023-04-30 12:15:00.903  INFO 11004 --- [restartedMain] o.s.jetty.server.handler.ContextHandler  : Started o.s.j.s.ServletContextHandler@44350b6b{/executors/json,null,AVAILABLE,@Spark}
+2023-04-30 12:15:00.904  INFO 11004 --- [restartedMain] o.s.jetty.server.handler.ContextHandler  : Started o.s.j.s.ServletContextHandler@50b3d399{/executors/threadDump,null,AVAILABLE,@Spark}
+2023-04-30 12:15:00.905  INFO 11004 --- [restartedMain] o.s.jetty.server.handler.ContextHandler  : Started o.s.j.s.ServletContextHandler@4906cb29{/executors/threadDump/json,null,AVAILABLE,@Spark}
+2023-04-30 12:15:00.915  INFO 11004 --- [restartedMain] o.s.jetty.server.handler.ContextHandler  : Started o.s.j.s.ServletContextHandler@79631f02{/static,null,AVAILABLE,@Spark}
+2023-04-30 12:15:00.916  INFO 11004 --- [restartedMain] o.s.jetty.server.handler.ContextHandler  : Started o.s.j.s.ServletContextHandler@520dc9fc{/,null,AVAILABLE,@Spark}
+2023-04-30 12:15:00.920  INFO 11004 --- [restartedMain] o.s.jetty.server.handler.ContextHandler  : Started o.s.j.s.ServletContextHandler@8ad3109{/api,null,AVAILABLE,@Spark}
+2023-04-30 12:15:00.921  INFO 11004 --- [restartedMain] o.s.jetty.server.handler.ContextHandler  : Started o.s.j.s.ServletContextHandler@5a0ab202{/jobs/job/kill,null,AVAILABLE,@Spark}
+2023-04-30 12:15:00.922  INFO 11004 --- [restartedMain] o.s.jetty.server.handler.ContextHandler  : Started o.s.j.s.ServletContextHandler@2a4502e0{/stages/stage/kill,null,AVAILABLE,@Spark}
+2023-04-30 12:15:00.926  INFO 11004 --- [restartedMain] org.apache.spark.ui.SparkUI              : Bound SparkUI to 0.0.0.0, and started at http://DESKTOP-1J0HSRS:4040
+2023-04-30 12:15:01.118  INFO 11004 --- [restartedMain] org.apache.spark.executor.Executor       : Starting executor ID driver on host localhost
+2023-04-30 12:15:01.182  INFO 11004 --- [restartedMain] org.apache.spark.util.Utils              : Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 59963.
+2023-04-30 12:15:01.184  INFO 11004 --- [restartedMain] o.a.s.n.netty.NettyBlockTransferService  : Server created on DESKTOP-1J0HSRS:59963
+2023-04-30 12:15:01.187  INFO 11004 --- [restartedMain] org.apache.spark.storage.BlockManager    : Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+2023-04-30 12:15:01.241  INFO 11004 --- [restartedMain] o.a.spark.storage.BlockManagerMaster     : Registering BlockManager BlockManagerId(driver, DESKTOP-1J0HSRS, 59963, None)
+2023-04-30 12:15:01.247  INFO 11004 --- [dispatcher-event-loop-2] o.a.s.s.BlockManagerMasterEndpoint       : Registering block manager DESKTOP-1J0HSRS:59963 with 1035.6 MB RAM, BlockManagerId(driver, DESKTOP-1J0HSRS, 59963, None)
+2023-04-30 12:15:01.256  INFO 11004 --- [restartedMain] o.a.spark.storage.BlockManagerMaster     : Registered BlockManager BlockManagerId(driver, DESKTOP-1J0HSRS, 59963, None)
+2023-04-30 12:15:01.258  INFO 11004 --- [restartedMain] org.apache.spark.storage.BlockManager    : Initialized BlockManager: BlockManagerId(driver, DESKTOP-1J0HSRS, 59963, None)
+2023-04-30 12:15:01.284  INFO 11004 --- [restartedMain] o.s.jetty.server.handler.ContextHandler  : Started o.s.j.s.ServletContextHandler@287df63d{/metrics/json,null,AVAILABLE,@Spark}
+2023-04-30 12:15:04.626  INFO 11004 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@89e890a, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4a043866, org.springframework.security.web.context.SecurityContextPersistenceFilter@1a101fed, org.springframework.security.web.header.HeaderWriterFilter@75207f7, org.springframework.security.web.authentication.logout.LogoutFilter@36325038, spring.all.Components.JwtAuthenticationFilter@5845a35b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@29bad13b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@653ad8b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7b410447, org.springframework.security.web.session.SessionManagementFilter@57a47278, org.springframework.security.web.access.ExceptionTranslationFilter@5017eab1, org.springframework.security.web.access.intercept.AuthorizationFilter@458d017]
+2023-04-30 12:15:11.215  INFO 11004 --- [restartedMain] o.a.k.clients.admin.AdminClientConfig    : AdminClientConfig values: 
+	bootstrap.servers = [localhost:9092]
+	client.dns.lookup = use_all_dns_ips
+	client.id = 
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2023-04-30 12:15:12.119  INFO 11004 --- [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.1.2
+2023-04-30 12:15:12.121  INFO 11004 --- [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: f8c67dc3ae0a3265
+2023-04-30 12:15:12.121  INFO 11004 --- [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1682837112101
+2023-04-30 12:15:14.013  INFO 11004 --- [kafka-admin-client-thread | adminclient-1] o.a.kafka.common.utils.AppInfoParser     : App info kafka.admin.client for adminclient-1 unregistered
+2023-04-30 12:15:14.021  INFO 11004 --- [kafka-admin-client-thread | adminclient-1] org.apache.kafka.common.metrics.Metrics  : Metrics scheduler closed
+2023-04-30 12:15:14.021  INFO 11004 --- [kafka-admin-client-thread | adminclient-1] org.apache.kafka.common.metrics.Metrics  : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2023-04-30 12:15:14.022  INFO 11004 --- [kafka-admin-client-thread | adminclient-1] org.apache.kafka.common.metrics.Metrics  : Metrics reporters closed
+2023-04-30 12:15:14.390  INFO 11004 --- [restartedMain] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-myGroup-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = myGroup
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.springframework.kafka.support.serializer.JsonDeserializer
+
+2023-04-30 12:15:14.540  INFO 11004 --- [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.1.2
+2023-04-30 12:15:14.541  INFO 11004 --- [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: f8c67dc3ae0a3265
+2023-04-30 12:15:14.541  INFO 11004 --- [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1682837114540
+2023-04-30 12:15:14.544  INFO 11004 --- [restartedMain] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-myGroup-1, groupId=myGroup] Subscribed to topic(s): factory
+2023-04-30 12:15:14.583  INFO 11004 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2023-04-30 12:15:14.615  INFO 11004 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-myGroup-1, groupId=myGroup] Resetting the last seen epoch of partition factory-0 to 0 since the associated topicId changed from null to KvLxiQKtRBS-gnYZcdby-w
+2023-04-30 12:15:14.615  INFO 11004 --- [scheduling-1] spring.all.service.KafkaDataService      : inside fetch data
+2023-04-30 12:15:14.617  INFO 11004 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-myGroup-1, groupId=myGroup] Cluster ID: MwRCsZZ5R_KtWtgl6hzoNA
+2023-04-30 12:15:14.618  INFO 11004 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-myGroup-1, groupId=myGroup] Discovered group coordinator DESKTOP-1J0HSRS:9092 (id: 2147483647 rack: null)
+2023-04-30 12:15:14.622  INFO 11004 --- [restartedMain] spring.all.AllApplication                : Started AllApplication in 26.945 seconds (JVM running for 30.529)
+2023-04-30 12:15:14.622  INFO 11004 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-myGroup-1, groupId=myGroup] (Re-)joining group
+2023-04-30 12:15:14.655  INFO 11004 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-myGroup-1, groupId=myGroup] Request joining group due to: need to re-join with the given member-id
+2023-04-30 12:15:14.655  INFO 11004 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-myGroup-1, groupId=myGroup] (Re-)joining group
+2023-04-30 12:15:14.663  INFO 11004 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-myGroup-1, groupId=myGroup] Successfully joined group with generation Generation{generationId=101, memberId='consumer-myGroup-1-35abed78-0b2f-4f81-a6a1-c6300c05032e', protocol='range'}
+2023-04-30 12:15:14.669  INFO 11004 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-myGroup-1, groupId=myGroup] Finished assignment for group at generation 101: {consumer-myGroup-1-35abed78-0b2f-4f81-a6a1-c6300c05032e=Assignment(partitions=[factory-0])}
+2023-04-30 12:15:14.707  INFO 11004 --- [scheduling-1] spring.all.service.KafkaDataService      : inside fetchdata :oldcount 57
+2023-04-30 12:15:14.767  INFO 11004 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-myGroup-1, groupId=myGroup] Successfully synced group in generation Generation{generationId=101, memberId='consumer-myGroup-1-35abed78-0b2f-4f81-a6a1-c6300c05032e', protocol='range'}
+2023-04-30 12:15:14.767  INFO 11004 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-myGroup-1, groupId=myGroup] Notifying assignor about the new Assignment(partitions=[factory-0])
+2023-04-30 12:15:14.775  INFO 11004 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-myGroup-1, groupId=myGroup] Adding newly assigned partitions: factory-0
+2023-04-30 12:15:14.788  INFO 11004 --- [scheduling-1] spring.all.service.KafkaDataService      : inside checkcount :oldcount 57
+2023-04-30 12:15:14.794  INFO 11004 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-myGroup-1, groupId=myGroup] Setting offset for partition factory-0 to the committed offset FetchPosition{offset=82440, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[DESKTOP-1J0HSRS:9092 (id: 0 rack: null)], epoch=0}}
+2023-04-30 12:15:14.796  INFO 11004 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : myGroup: partitions assigned: [factory-0]
+2023-04-30 12:15:14.819  INFO 11004 --- [scheduling-1] spring.all.service.KafkaDataService      : inside checkcount :newcount 57
+2023-04-30 12:15:24.894  INFO 11004 --- [scheduling-1] spring.all.service.KafkaDataService      : inside checkcount :oldcount 57
+2023-04-30 12:15:24.973  INFO 11004 --- [scheduling-1] spring.all.service.KafkaDataService      : inside checkcount :newcount 57
+2023-04-30 12:15:34.753  INFO 11004 --- [scheduling-1] spring.all.service.KafkaDataService      : inside fetch data
+2023-04-30 12:15:34.834  INFO 11004 --- [scheduling-1] spring.all.service.KafkaDataService      : inside fetchdata :oldcount 57
+2023-04-30 12:15:35.008  INFO 11004 --- [scheduling-1] spring.all.service.KafkaDataService      : inside checkcount :oldcount 57
+2023-04-30 12:15:35.033  INFO 11004 --- [scheduling-1] spring.all.service.KafkaDataService      : inside checkcount :newcount 57
+2023-04-30 12:15:45.139  INFO 11004 --- [scheduling-1] spring.all.service.KafkaDataService      : inside checkcount :oldcount 57
+2023-04-30 12:15:45.165  INFO 11004 --- [scheduling-1] spring.all.service.KafkaDataService      : inside checkcount :newcount 57
+2023-04-30 12:15:54.871  INFO 11004 --- [scheduling-1] spring.all.service.KafkaDataService      : inside fetch data
+2023-04-30 12:15:55.053  INFO 11004 --- [scheduling-1] spring.all.service.KafkaDataService      : inside fetchdata :oldcount 57
+2023-04-30 12:15:55.193  INFO 11004 --- [scheduling-1] spring.all.service.KafkaDataService      : inside checkcount :oldcount 57
+2023-04-30 12:15:55.218  INFO 11004 --- [scheduling-1] spring.all.service.KafkaDataService      : inside checkcount :newcount 57
+2023-04-30 12:15:56.641  INFO 11004 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-04-30 12:15:56.674  INFO 11004 --- [Thread-4] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-04-30 12:15:56.690  INFO 11004 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-myGroup-1, groupId=myGroup] Revoke previously assigned partitions factory-0
+2023-04-30 12:15:56.691  INFO 11004 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : myGroup: partitions revoked: [factory-0]
+2023-04-30 12:15:56.692  INFO 11004 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-myGroup-1, groupId=myGroup] Member consumer-myGroup-1-35abed78-0b2f-4f81-a6a1-c6300c05032e sending LeaveGroup request to coordinator DESKTOP-1J0HSRS:9092 (id: 2147483647 rack: null) due to the consumer unsubscribed from all topics
+2023-04-30 12:15:56.693  INFO 11004 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-myGroup-1, groupId=myGroup] Resetting generation due to: consumer pro-actively leaving the group
+2023-04-30 12:15:56.693  INFO 11004 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-myGroup-1, groupId=myGroup] Request joining group due to: consumer pro-actively leaving the group
+2023-04-30 12:15:56.693  INFO 11004 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-myGroup-1, groupId=myGroup] Unsubscribed all topics or patterns and assigned partitions
+2023-04-30 12:15:56.694  INFO 11004 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-myGroup-1, groupId=myGroup] Resetting generation due to: consumer pro-actively leaving the group
+2023-04-30 12:15:56.694  INFO 11004 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-myGroup-1, groupId=myGroup] Request joining group due to: consumer pro-actively leaving the group
+2023-04-30 12:15:56.698  INFO 11004 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.common.metrics.Metrics  : Metrics scheduler closed
+2023-04-30 12:15:56.698  INFO 11004 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.common.metrics.Metrics  : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2023-04-30 12:15:56.698  INFO 11004 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.common.metrics.Metrics  : Metrics reporters closed
+2023-04-30 12:15:56.701  INFO 11004 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.kafka.common.utils.AppInfoParser     : App info kafka.consumer for consumer-myGroup-1 unregistered
+2023-04-30 12:15:56.703  INFO 11004 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : myGroup: Consumer stopped
+2023-04-30 12:15:56.757  INFO 11004 --- [Thread-4] o.s.jetty.server.AbstractConnector       : Stopped Spark@2e181098{HTTP/1.1,[http/1.1]}{0.0.0.0:4040}
+2023-04-30 12:15:56.766  INFO 11004 --- [Thread-4] org.apache.spark.ui.SparkUI              : Stopped Spark web UI at http://DESKTOP-1J0HSRS:4040
+2023-04-30 12:15:56.837  INFO 11004 --- [dispatcher-event-loop-0] o.a.s.MapOutputTrackerMasterEndpoint     : MapOutputTrackerMasterEndpoint stopped!
+2023-04-30 12:15:56.847  INFO 11004 --- [Thread-4] o.a.spark.storage.memory.MemoryStore     : MemoryStore cleared
+2023-04-30 12:15:56.847  INFO 11004 --- [Thread-4] org.apache.spark.storage.BlockManager    : BlockManager stopped
+2023-04-30 12:15:56.849  INFO 11004 --- [Thread-4] o.a.spark.storage.BlockManagerMaster     : BlockManagerMaster stopped
+2023-04-30 12:15:56.875  INFO 11004 --- [dispatcher-event-loop-1] rdinator$OutputCommitCoordinatorEndpoint : OutputCommitCoordinator stopped!
+2023-04-30 12:15:56.880  INFO 11004 --- [Thread-4] org.apache.spark.SparkContext            : Successfully stopped SparkContext
+2023-04-30 12:15:56.889  INFO 11004 --- [Thread-4] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'

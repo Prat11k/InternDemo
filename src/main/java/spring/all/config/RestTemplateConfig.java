@@ -1,0 +1,17 @@
+package spring.all.config;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.web.client.RestTemplate;
+
+@Configuration
+@ComponentScan("spring.all")
+public class RestTemplateConfig {
+
+	@Bean
+	RestTemplate restTemplate() {
+		RestTemplate restTemplate = new RestTemplate();
+		return restTemplate;
+	}
+}
